@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.AddRes">
+   <children>
+      <Label layoutX="6.0" layoutY="155.0" prefHeight="34.0" prefWidth="299.0" text="Please enter your name, row and number of seats" />
+      <TextField fx:id="text" layoutX="308.0" layoutY="155.0" prefHeight="96.0" prefWidth="261.0" />
+      <Label layoutX="24.0" layoutY="299.0" prefHeight="34.0" prefWidth="356.0" text="Example: email@gmail;1,1;2,3   (Seat 1: row 1, number 1) " />
+      <Label layoutX="108.0" layoutY="333.0" prefHeight="27.0" prefWidth="187.0" text="    (Seat 2: row 2, number 3)" />
+      <Button fx:id="Done" layoutX="518.0" layoutY="346.0" mnemonicParsing="false" onAction="#handleDone" text="Done" />
+      <Button fx:id="add" layoutX="517.0" layoutY="302.0" mnemonicParsing="false" onAction="#add" prefHeight="27.0" prefWidth="49.0" text="Add" />
+   </children>
+</AnchorPane>

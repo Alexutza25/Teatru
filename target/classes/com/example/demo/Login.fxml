@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="618.0" style="-fx-background-color: rgba(248,176,248,0.78);" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.LogIn">
+    <children>
+        <SplitPane dividerPositions="0.48994811932555116" prefHeight="406.0" prefWidth="618.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: rgba(248,176,248,0.78);">
+                    <children>
+
+                        <Label layoutX="21.0" layoutY="148.0" text="username" />
+                        <Label layoutX="21.0" layoutY="193.0" text="password" />
+                        <TextField fx:id="loginEmailText" layoutX="94.0" layoutY="144.0" prefHeight="26.0" prefWidth="181.0" />
+                        <PasswordField fx:id="loginPasswordText" layoutX="94.0" layoutY="190.0" prefHeight="26.0" prefWidth="182.0" />
+                        <RadioButton fx:id="spectatorRadioLogin" layoutX="51.0" layoutY="246.0" mnemonicParsing="false" text="Spectator" />
+                        <RadioButton fx:id="adminRadioLogin" layoutX="51.0" layoutY="303.0" mnemonicParsing="false" text="Admin" />
+                        <Button fx:id="loginBut" layoutX="201.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="38.0" prefWidth="74.0" text="Log In" />
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: rgba(248,176,248,0.78);">
+                    <children>
+                        <Label layoutX="20.0" layoutY="60.0" prefHeight="19.0" prefWidth="86.0" text="email adress" />
+                        <Label layoutX="36.0" layoutY="134.0" text="last name" />
+                        <Label layoutX="36.0" layoutY="171.0" text="password" />
+                        <Label layoutX="13.0" layoutY="204.0" text="confirm password" />
+                        <TextField fx:id="signupEmailText" layoutX="116.0" layoutY="56.0" prefHeight="26.0" prefWidth="179.0" />
+                        <TextField fx:id="signupFirstNameText" layoutX="115.0" layoutY="130.0" prefHeight="26.0" prefWidth="180.0" />
+                        <PasswordField fx:id="signupPasswordText" layoutX="115.0" layoutY="166.0" prefHeight="26.0" prefWidth="182.0" />
+                        <PasswordField fx:id="signupConfirmPasswordText" layoutX="115.0" layoutY="200.0" prefHeight="26.0" prefWidth="183.0" />
+                        <Button fx:id="signupBut" layoutX="159.0" layoutY="320.0" mnemonicParsing="false" onAction="#handleSignin" prefHeight="38.0" prefWidth="121.0" text="Finish Registration" />
+                  <TextField fx:id="signupLastNameText" layoutX="117.0" layoutY="93.0" prefHeight="27.0" prefWidth="179.0" />
+                  <Label layoutX="36.0" layoutY="97.0" text="first name" />
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
